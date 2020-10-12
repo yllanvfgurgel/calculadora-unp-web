@@ -1,0 +1,58 @@
+
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>Yllan Gurgel</title>
+    </head>
+        
+    <body>
+        <header>
+            <div class="links">
+                <a href="index.html">Sobre</a>
+                <a href="projeto1.html">Projeto 1</a>
+            </div>
+        </header>
+
+        
+
+        <div id="wrapper">
+            <h1>Projeto 1 - Calculadora</h1>
+            <div id="calculator">
+                <div id="screen">
+                    <span class="valor">0</span>
+                </div>
+                <div class="buttons">
+                    <button class="button numeric" onclick="addNumberToScreen('1')">1</button>
+                    <button class="button numeric" onclick="addNumberToScreen('2')">2</button>
+                    <button class="button numeric" onclick="addNumberToScreen('3')">3</button>
+                    <button class="button numeric" onclick="addNumberToScreen('4')">4</button>
+                    <button class="button numeric" onclick="addNumberToScreen('5')">5</button>
+                    <button class="button numeric" onclick="addNumberToScreen('6')">6</button>
+                    <button class="button numeric" onclick="addNumberToScreen('7')">7</button>
+                    <button class="button numeric" onclick="addNumberToScreen('8')">8</button>
+                    <button class="button numeric" onclick="addNumberToScreen('9')">9</button>
+                    <button class="button numeric" onclick="addNumberToScreen('0')">0</button>
+                    <button class="button operator" onclick="storeOperator(event)">+</button>
+                    <button class="button operator" onclick="storeOperator(event)">-</button>
+                    <button class="button operator" onclick="storeOperator(event)">*</button>
+                    <button class="button operator" onclick="storeOperator(event)">/</button>
+                    <button class="button resultado" onclick="calculate()">=</button>
+                    <button class="button clean" onclick="cleanEverything()">CE</button>
+                    <button class="button point"onclick="addNumberToScreen('.')">.</button>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <script src="scripts.js">
+
+        </script>
+
+
+
+    </body>
+</html> 
+    

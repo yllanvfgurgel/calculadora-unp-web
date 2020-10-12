@@ -1,0 +1,129 @@
+@import "https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap";
+
+:root {
+    --color--green: #3c9753; /* Criando variáveis em CSS */
+    --color--rocket: #7159c1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background: #282a36;
+    font-family:'Source Sans Pro', sans-serif;
+    color: white;
+}
+
+header {
+    padding: 32px;
+    border-bottom: 1px solid #333;
+    background: rgba(0, 0, 0, 0.1); /* A quarta propriedade (alpha) trabalha com a transparência da cor */
+}
+
+.links {
+    text-align: center;
+}
+
+.links a {
+    color: white;
+    font-size: 18px; /*Geralmente para textos utilizamos a unidade em pixels*/
+    line-height: 28px; /*Quando tiver em dúvida coloque 10px a mais do que font-size*/
+    margin: 0 16px;
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: var(--color--green);
+    transition: color 700ms;
+}
+
+#wrapper {
+    text-align: center;
+    padding: 32px;
+}
+
+#wrapper img {
+    border-radius: 50%;
+    border: 5px solid var(--color--green);
+    margin-bottom: 32px;
+    height: 200px;
+    width: 200px;
+}
+
+#wrapper h1 {
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+#wrapper h2 {
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: normal;
+    margin-top: 8px;
+    opacity: 0.8;
+}
+
+#wrapper p {
+    max-width: 500px;
+    margin: 15px auto;
+    font-size: 20px;
+    line-height: 34px;
+}
+
+#wrapper #calculator {
+    height: 500px;
+    width: 400px;
+    margin: 0 auto;
+    background: rgb(145, 144, 144);
+    border-radius: 5px;
+    padding-top: 10px;
+}
+
+#wrapper #screen {
+    height: 100px;
+    margin: 8px 16px;
+    background-color: rgb(206, 205, 205);
+    border-radius: 5px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+#screen .valor {
+    font-size: 32px;
+    color: black;
+    padding-right: 8px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    padding: 8px 16px;
+    font-size: 24px;
+    transition: opacity 200ms;
+}
+
+.button {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 16px 32px;
+    border-radius: 5px;
+    color: white;
+}
+
+.button:hover {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+
+#links-footer a {
+    border-bottom: 1px solid var(--color--green);
+}
+
+
+
