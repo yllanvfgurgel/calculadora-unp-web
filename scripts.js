@@ -1,21 +1,41 @@
-const numericButtons = document.querySelectorAll('.numeric')
+// const numericButtons = document.querySelectorAll('.numeric')
 const screenValue = document.querySelector('.valor')
 let operando1, operando2, operador, resultado;
 
+
+
+
 function addNumberToScreen(number) {
     
-    if (screenValue.textContent == '0') {
+    const contemPonto = screenValue.textContent.includes('.')
+
+    if (screenValue.textContent == '0' && number != '.') {
         screenValue.textContent = number
-        return;
+        return
     }
 
+    if (number == '.' && contemPonto) {
+        return 
+    }
+    
     screenValue.textContent += number
+
+    // console.log(contemPonto)
 
 
 }
 
 function storeOperator(event) {
     
+    if (resultado != 0) {
+        operando1 = resultado
+        operador = event.target.innerText
+
+        screenValue.textContent = '0'
+
+        return
+    }
+
     operando1 = Number(screenValue.textContent)
     operador = event.target.innerText
 
@@ -52,6 +72,7 @@ function cleanEverything() {
     operando1 = 0
     operando2 = 0
     operador = null
+    resultado = 0
 
     screenValue.textContent = '0'
 }
