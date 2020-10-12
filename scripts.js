@@ -1,6 +1,6 @@
-// const numericButtons = document.querySelectorAll('.numeric')
 const screenValue = document.querySelector('.valor')
-let operando1, operando2, operador, resultado;
+let operando1, operando2, operador;
+let resultado = 0;
 
 
 
@@ -20,7 +20,6 @@ function addNumberToScreen(number) {
     
     screenValue.textContent += number
 
-    // console.log(contemPonto)
 
 
 }
