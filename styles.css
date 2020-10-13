@@ -13,14 +13,19 @@
 
 body {
     background: #282a36;
-    font-family:'Source Sans Pro', sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     color: white;
 }
 
 header {
     padding: 32px;
     border-bottom: 1px solid #333;
-    background: rgba(0, 0, 0, 0.1); /* A quarta propriedade (alpha) trabalha com a transparência da cor */
+    background: rgba(
+        0,
+        0,
+        0,
+        0.1
+    ); /* A quarta propriedade (alpha) trabalha com a transparência da cor */
 }
 
 .links {
@@ -102,7 +107,7 @@ header {
 
 .buttons {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 12px;
     padding: 8px 16px;
     font-size: 24px;
@@ -120,10 +125,9 @@ header {
     background: rgba(0, 0, 0, 0.6);
 }
 
+.button.resultado {
+}
 
 #links-footer a {
     border-bottom: 1px solid var(--color--green);
 }
-
-
-
